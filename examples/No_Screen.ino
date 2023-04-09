@@ -23,7 +23,8 @@ void setup()
 {
 
     /* Init Serial */
-    Serial.begin(9600); //设置波特率为 115200
+    Serial.begin(9600); //设置波特率为 9600
+    delay(3000);
 
     /* Init IIC */
     Wire.begin(); // IIC初始化
@@ -67,4 +68,5 @@ void printPmuInfo(){ //需要打印在屏幕上的芯片信息
 
         Serial.printf("Battery Coulometer Data: %.2f.\n",AXP173_Chip.getCoulometerData()); // get coulomb val affter calculation
     }
+    delay(1000);
 }
