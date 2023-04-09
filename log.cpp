@@ -1,3 +1,5 @@
+//Disable screen by default
+#ifdef AXP173_LIBRARY_USE_SCREEN
 
 #include "LOG.h"
 
@@ -57,3 +59,5 @@ void logPrintf(const int level,const char * fun,const int line,const char * date
 }
 
 U8G2LOG u8g2log;
+
+#endif
