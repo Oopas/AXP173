@@ -540,4 +540,4 @@ void AXP173::RestoreFromLightSleep(void) {      //ldo重启输出
 
 }
 
-AXP173 pmu;
+//AXP173 pmu;
